@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/static/images/changers.png">
+    <link rel="stylesheet" href="/static/semantic/semantic.min.css">
+    <title>The changers</title>
+    <script language=javascript> 
+        var url= document.URL; 
+    </script>
+</head>
+<body>
+  <img class="ui small image" src="/static/images/changers.png">
+    <div class="ui pointing menu">
+      
+        <a class="active item" href="/">
+          <i class="home icon"></i>
+          Accueil
+        </a>
+        <a class="item" href="/activite">
+          <i class="grid layout icon"></i>
+          Activités
+        </a>
+        <a class="item" href="/contact">
+          <i class="mail icon"></i>
+          Contact
+        </a>
+        <div class="right menu">
+          <div class="item">
+            <div class="ui transparent icon input">
+              <input type="text" placeholder="Recherche...">
+              <i class="search link icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui main container tp-dottedoverlay threexthree">
+          <% if (locals.flash && locals.flash.error) { %>
+          <div class="ui negative message">
+              <%= flash.error %>
+          </div>asmagharsallah
+          <% } %>
