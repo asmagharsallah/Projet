@@ -1,44 +1,8 @@
-/*const EventEmitter = require('events');
-
-let monEcouteur = new EventEmitter();
-monEcouteur.on('sauter', function () {
-    console.log('sauté');
-});
-monEcouteur.emit('sauter');
-monEcouteur.emit('sauter');*/
-/*var http = require('http');
-var fs = require('fs');
-var url = require('url');
-
-var server = http.createServer(function(req, res) {
-  res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
-  var query = url.parse(req.url, true).query;
-  var nom = query.nom;
-  /*if (query.nom === undefined){
-      res.write('bonjour anonyme');
-  }
-  else {
-      res.write('bonjour '+ query.nom);
-  }
-  res.end();*/
-
-  /*fs.readFile('corps.html', 'utf8', function (err,html){
-    if(err){
-        res.writeHead(500,{"Content-type": "text/plain"});
-        res.write('500');
-        res.end();
-    }
-    res.writeHead(200,{"Content-type": "text/html; charset=utf-8"});
-    html = html.replace('{{ nom }}', nom)
-    res.write(html);
-    res.end();
-});
-});
-server.listen(8080);*/
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
 let session = require('express-session');
+
 
 
 // ejs c'est le moteur de template utilisé
